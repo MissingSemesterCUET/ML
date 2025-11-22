@@ -34,7 +34,7 @@ jobs:
           jupyter nbconvert --to slides *.ipynb --output-dir='_site/slides'
 
           # 3. Copy your custom pages to the root
-          cp *.html _site/*.html
+          cp index.html _site/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
