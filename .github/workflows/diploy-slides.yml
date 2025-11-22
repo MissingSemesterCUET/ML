@@ -27,11 +27,11 @@ jobs:
       - name: Build Site
         run: |
           # 1. Create the build directory
-          mkdir -p _site/slides
+          mkdir -p _site/html
 
           # 2. Convert all .ipynb files to HTML slides
-          # This puts them inside the 'slides' folder
-          jupyter nbconvert --to slides *.ipynb --output-dir='_site/slides'
+          # This puts them inside the 'html' folder
+          jupyter nbconvert --to html *.ipynb --output-dir='_site/html'
 
           # 3. Copy your custom pages to the root
           cp index.html _site/index.html
