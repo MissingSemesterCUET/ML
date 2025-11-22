@@ -1,0 +1,44 @@
+name: Deploy Site & Slides
+
+on:
+  push:
+    branches:
+      - main  # Runs whenever you push code to main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          pip install jupyter nbconvert
+
+      - name: Build Site
+        run: |
+          # 1. Create the build directory
+          mkdir -p _site/slides
+
+          # 2. Convert all .ipynb files to HTML slides
+          # This puts them inside the 'slides' folder
+          jupyter nbconvert --to slides *.ipynb --output-dir='_site/slides'
+
+          # 3. Copy your custom homepage to the root
+          # Fails silently if you haven't created index.html yet
+          cp index.html _site/index.html || echo "No index.html found, skipping."
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
