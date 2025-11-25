@@ -8295,6 +8295,18 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Pytorch is written in C++.</p>
+<p>So, the data types you learned in C++ are also available in Pytorch.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Tensor-&amp;-Operations-on-Tensors">Tensor &amp; Operations on Tensors<a class="anchor-link" href="#Tensor-&amp;-Operations-on-Tensors">¶</a></h2>
 </div>
 </div>
@@ -9441,6 +9453,22 @@ torch.Size([3, 1])
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><code>requires_grad</code> just tells pytorch, "hey pytorch, watch this variable x. i will later ask you to differentiate w.r.t this"</li>
+<li><code>y = x**2 + 5</code> is a function of x. In the background, pytorch also creates and stores a "computational graph" - which is just a fancy way to say that, pytorch does not only calculate the value of y, but also remembers the formula... because, duh, we need the formula to figure out the derivative.</li>
+<li><code>y.backward()</code> asks pytorch to calculate the gradient of y w.r.t x</li>
+<li>But where is the gradient stored? in <code>x.grad</code></li>
+</ul>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -9566,6 +9594,24 @@ tensor(1.)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>So how does it calculate the gradient? Chain rule!</p>
+<p>Suppose you want to have $f(x) = a(b(x))$<br/>
+Then $\frac{df}{dx} = \frac{da}{db} \times \frac{db}{dx}$</p>
+<p>Example: <br/>
+Let, $a(x) = cos(x)$ and $b(x) = x^2$<br/>
+Then, $f(x) = \cos(x^2)$</p>
+<p>Therefore,<br/>
+$\frac{df}{dx} = \frac{d\cos(x^2)}{dx} = \frac{d\cos(x^2)}{d(x^2)} \times \frac{d(x^2)}{dx} = -\sin(x^2) \times 2x$</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Matplotlib">Matplotlib<a class="anchor-link" href="#Matplotlib">¶</a></h1>
 </div>
 </div>
@@ -9575,7 +9621,7 @@ tensor(1.)
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -9591,7 +9637,7 @@ tensor(1.)
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;matplotlib.collections.PathCollection at 0x765de1518c80&gt;</pre>
 </div>
