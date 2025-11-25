@@ -7732,7 +7732,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nd">@interact</span><span class="p">(</span><span class="n">m</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">),</span> <span class="n">b</span><span class="o">=</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">))</span>
@@ -7742,6 +7742,7 @@ a.anchor-link {
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">price_prediction</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">price_prediction</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">"MAE = </span><span class="si">{</span><span class="n">mae</span><span class="p">(</span><span class="n">price</span><span class="p">,</span><span class="w"> </span><span class="n">price_prediction</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7798,7 +7799,7 @@ a.anchor-link {
 <p>(Draw a quadratic curve on whiteboard)
 Imagine you live in a 2D world. The only thing you can do is move forward (positive x-direction) or backward (negative x-direction). You are blindfolded on a curvy path. You can't see the path, but you can feel the slope at your feet. You want to get to the bottom of the curve. How would you do it?</p>
 <p>You put one foot in front, to feel the slope. You feel that the land is higher in front. So, where should you go? Backward! So, you move backward. You keep doing this until you reach the bottom of the curve.</p>
-<p>(use the same analogy later to show: learning rate, why learning rate is multiplied with slope, multiple minima, plateau)</p>
+<p>(use the same analogy later to show: learning rate, why learning rate is multiplied with slope, local minima, plateau)</p>
 <p>Mathematically, the "direction" is the negative of the <strong>gradient</strong> (derivative) of the loss with respect to the weights.</p>
 </div>
 </div>
@@ -7892,22 +7893,25 @@ tensor([2.2222])
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [706]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
-    <span class="n">m</span> <span class="o">-=</span> <span class="mf">0.0001</span> <span class="o">*</span> <span class="n">m</span><span class="o">.</span><span class="n">grad</span>
-    <span class="n">b</span> <span class="o">-=</span> <span class="mf">0.0001</span> <span class="o">*</span> <span class="n">b</span><span class="o">.</span><span class="n">grad</span>
-
-
-<span class="n">price_pred</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">size</span> <span class="o">+</span> <span class="n">b</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">price_pred</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="n">size</span> <span class="o">+</span> <span class="n">b</span>
 
 <span class="n">error</span> <span class="o">=</span> <span class="n">mse</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">price_pred</span><span class="p">)</span>
 <span class="n">error</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
 
+
 <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span> <span class="n">m</span><span class="o">.</span><span class="n">grad</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span> <span class="n">b</span><span class="o">.</span><span class="n">grad</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">item</span><span class="p">())</span>
+
+<span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+    <span class="n">m</span> <span class="o">-=</span> <span class="mf">0.0001</span> <span class="o">*</span> <span class="n">m</span><span class="o">.</span><span class="n">grad</span>
+    <span class="n">b</span> <span class="o">-=</span> <span class="mf">0.0001</span> <span class="o">*</span> <span class="n">b</span><span class="o">.</span><span class="n">grad</span>
+
+<span class="n">m</span><span class="o">.</span><span class="n">grad</span><span class="o">.</span><span class="n">zero_</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">grad</span><span class="o">.</span><span class="n">zero_</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -7938,6 +7942,21 @@ tensor([2.2222])
 <ul>
 <li>Learning rate and epoch - Think like a experimental scientist</li>
 <li>Hyperparameters vs learning parameters</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6f452500">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Next:</p>
+<ul>
+<li>What happens when the learning rate is too low/high?</li>
+<li>When to stop? Epoch vs threshold</li>
 </ul>
 </div>
 </div>
