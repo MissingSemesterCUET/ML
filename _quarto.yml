@@ -1,0 +1,78 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "ML – Missing Semester CUET"
+  search: true
+  navbar:
+    background: transparent
+    left:
+      - text: "Home"
+        href: index.md
+    right:
+      - text: "Software Dev"
+        href: "https://missingsemestercuet.github.io/SD/"
+      - text: "Cybersecurity"
+        href: "https://missingsemestercuet.github.io/Cyber/"
+      - icon: github
+        href: "https://github.com/MissingSemesterCUET/ML"
+  sidebar:
+    - title: "Lecture 1 – Linear Regression"
+      style: docked
+      collapse-level: 1
+      contents:
+        - section: "Lecture 1"
+          contents:
+            - text: "Outline"
+              href: lectures/01-linear-regression/outline.md
+            - text: "Slides"
+              href: lectures/01-linear-regression/slides.ipynb
+            - text: "Video"
+              href: lectures/01-linear-regression/video.md
+    - title: "Lecture 2 – Logistic Regression"
+      style: docked
+      collapse-level: 1
+      contents:
+        - section: "Lecture 2"
+          contents:
+            - text: "Outline"
+              href: lectures/02-logistic-regression/outline.md
+            - text: "Slides"
+              href: lectures/02-logistic-regression/slides.ipynb
+            - text: "Video"
+              href: lectures/02-logistic-regression/video.md
+    - title: "Lecture 3 – Neural Networks"
+      style: docked
+      collapse-level: 1
+      contents:
+        - section: "Lecture 3"
+          contents:
+            - text: "Outline"
+              href: lectures/03-neural-networks/outline.md
+            - text: "Slides"
+              href: lectures/03-neural-networks/slides.ipynb
+            - text: "Video"
+              href: lectures/03-neural-networks/video.md
+  page-footer:
+    left: "Missing Semester CUET"
+    center: "© 2026"
+    right: 
+      - icon: github
+        href: "https://github.com/MissingSemesterCUET/ML"
+
+execute:
+  enabled: false
+
+format:
+  html:
+    theme: none
+    css: styles.css
+    html-math-method: mathjax
+    highlight-style: atom-one-dark
+    toc: true
+    code-tools: true
+    code-copy: true
+    embed-resources: false
+
+notebook-links: true
