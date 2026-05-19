@@ -1,0 +1,69 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "ML – Missing Semester CUET"
+  navbar:
+    background: primary
+    left:
+      - href: index.md
+        text: Home
+      - href: https://MissingSemesterCUET.github.io/SD/
+        text: SD
+      - href: https://MissingSemesterCUET.github.io/Cyber/
+        text: Cyber
+    right:
+      - icon: github
+        href: https://github.com/MissingSemesterCUET/ML
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "1. Introduction to ML"
+        contents:
+          - text: "Lecture Outline"
+            file: lectures/01-introduction-to-ml/outline.md
+          - text: "Lecture Slides"
+            file: lectures/01-introduction-to-ml/slides.ipynb
+          - text: "Lecture Video"
+            file: lectures/01-introduction-to-ml/video.md
+      - section: "2. Supervised Learning"
+        contents:
+          - text: "Lecture Outline"
+            file: lectures/02-supervised-learning/outline.md
+          - text: "Lecture Slides"
+            file: lectures/02-supervised-learning/slides.ipynb
+          - text: "Lecture Video"
+            file: lectures/02-supervised-learning/video.md
+      - section: "3. Unsupervised Learning"
+        contents:
+          - text: "Lecture Outline"
+            file: lectures/03-unsupervised-learning/outline.md
+          - text: "Lecture Slides"
+            file: lectures/03-unsupervised-learning/slides.ipynb
+          - text: "Lecture Video"
+            file: lectures/03-unsupervised-learning/video.md
+  page-footer:
+    left: "Missing Semester CUET – Machine Learning"
+    center: "Built with Quarto"
+    right: "2026"
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-fold: show
+    ipynb-shell-interactivity: all
+    nb-metadata:
+      kernelspec:
+        display_name: Python 3
+        language: python
+        name: python3
+    download-ipynb: true
+
+execute:
+  enabled: false
