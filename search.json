@@ -1,0 +1,534 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Machine Learning Section",
+    "section": "",
+    "text": "Empowering students to build, deploy, and scale intelligent systems."
+  },
+  {
+    "objectID": "index.html#welcome-to-the-ml-section",
+    "href": "index.html#welcome-to-the-ml-section",
+    "title": "Machine Learning Section",
+    "section": "Welcome to the ML Section",
+    "text": "Welcome to the ML Section\nThis course provides a comprehensive introduction to Machine Learning, from fundamental concepts to advanced techniques. Whether you’re a complete beginner or looking to sharpen your skills, this section will guide you through the exciting world of AI.\n\n\n\nLecture 1\n\nIntroduction to ML\n\n\nUnderstanding the basics, types of ML, and its impact on the modern world. We’ll set the stage for your ML journey.\n\n\n\nExplore →\n\n\n\n\nLecture 2\n\nSupervised Learning\n\n\nMastering regression and classification. Learn how to train models using labeled data and evaluate their performance.\n\n\n\nExplore →\n\n\n\n\nLecture 3\n\nUnsupervised Learning\n\n\nDiscovering patterns in unlabeled data. Dive into clustering, PCA, and anomaly detection techniques.\n\n\n\nExplore →"
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Machine Learning Section",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nTo get the most out of this course, we recommend:\n\nPython Proficiency: Familiarity with basic syntax, data structures, and libraries like NumPy.\nMathematics: Basic understanding of linear algebra, calculus, and probability.\nCuriosity: A desire to understand how data can be transformed into insights."
+  },
+  {
+    "objectID": "index.html#instructor-info",
+    "href": "index.html#instructor-info",
+    "title": "Machine Learning Section",
+    "section": "Instructor Info",
+    "text": "Instructor Info\nJohn Doe\nMachine Learning Instructor\nEmail: john.doe@example.com\nJane Smith\nAssistant Instructor\nEmail: jane.smith@example.com\n\n\nGet Started with Lecture 1 →"
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/slides.html",
+    "href": "lectures/02-supervised-learning/slides.html",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "",
+    "text": "Missing Semester CUET",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/slides.html#what-is-supervised-learning",
+    "href": "lectures/02-supervised-learning/slides.html#what-is-supervised-learning",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "What is Supervised Learning?",
+    "text": "What is Supervised Learning?\n\nTraining with labeled data.\nThe goal is to learn a mapping \\(f(x) = y\\).\n\\(x\\) = features, \\(y\\) = target/label.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/slides.html#linear-regression",
+    "href": "lectures/02-supervised-learning/slides.html#linear-regression",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "Linear Regression",
+    "text": "Linear Regression\n\nPredicting continuous values.\nFormula: \\(y = mx + b\\)\n\n\n\n\nCode\nimport numpy as np\nnp.array([1, 2, 3])\n\n\narray([1, 2, 3])",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/slides.html#logistic-regression",
+    "href": "lectures/02-supervised-learning/slides.html#logistic-regression",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\nBinary classification (0 or 1).\nUses the Sigmoid function to map predictions to probabilities.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/slides.html#decision-trees",
+    "href": "lectures/02-supervised-learning/slides.html#decision-trees",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "Decision Trees",
+    "text": "Decision Trees\n\nFlowchart-like structure.\nEasy to interpret and visualize.\nGreat for handling non-linear data.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/slides.html#evaluation-metrics",
+    "href": "lectures/02-supervised-learning/slides.html#evaluation-metrics",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "Evaluation Metrics",
+    "text": "Evaluation Metrics\n\nAccuracy: Correct / Total\nPrecision: TP / (TP + FP)\nRecall: TP / (TP + FN)",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/slides.html#questions",
+    "href": "lectures/02-supervised-learning/slides.html#questions",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "Questions?",
+    "text": "Questions?\nNext up: Unsupervised Learning.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/video.html",
+    "href": "lectures/01-introduction-to-ml/video.html",
+    "title": "Lecture 1: Video",
+    "section": "",
+    "text": "In this video, we introduce the core concepts of Machine Learning, discuss the different types of learning algorithms, and explore how ML is transforming industries today.\n\n\n\n\nDuration: 45 minutes\nTopics Covered: ML Definition, History, Types of ML, Real-world examples.\nResources: Slides, Outline\n\n\n\n\n\n\n\n\nNoteNote\n\n\n\nThis video is a recording from the 2026 Spring Semester.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Video"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/video.html#watch-the-lecture",
+    "href": "lectures/01-introduction-to-ml/video.html#watch-the-lecture",
+    "title": "Lecture 1: Video",
+    "section": "",
+    "text": "In this video, we introduce the core concepts of Machine Learning, discuss the different types of learning algorithms, and explore how ML is transforming industries today.\n\n\n\n\nDuration: 45 minutes\nTopics Covered: ML Definition, History, Types of ML, Real-world examples.\nResources: Slides, Outline\n\n\n\n\n\n\n\n\nNoteNote\n\n\n\nThis video is a recording from the 2026 Spring Semester.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Video"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/outline.html",
+    "href": "lectures/01-introduction-to-ml/outline.html",
+    "title": "Lecture 1: Introduction to ML",
+    "section": "",
+    "text": "By the end of this lecture, you will be able to: - Define Machine Learning and distinguish it from traditional programming. - Identify the three main types of ML: Supervised, Unsupervised, and Reinforcement Learning. - Describe real-world applications of ML in various domains. - Understand the typical lifecycle of an ML project.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/outline.html#learning-objectives",
+    "href": "lectures/01-introduction-to-ml/outline.html#learning-objectives",
+    "title": "Lecture 1: Introduction to ML",
+    "section": "",
+    "text": "By the end of this lecture, you will be able to: - Define Machine Learning and distinguish it from traditional programming. - Identify the three main types of ML: Supervised, Unsupervised, and Reinforcement Learning. - Describe real-world applications of ML in various domains. - Understand the typical lifecycle of an ML project.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/outline.html#what-is-machine-learning",
+    "href": "lectures/01-introduction-to-ml/outline.html#what-is-machine-learning",
+    "title": "Lecture 1: Introduction to ML",
+    "section": "What is Machine Learning?",
+    "text": "What is Machine Learning?\nMachine Learning (ML) is a subfield of Artificial Intelligence (AI) that focuses on building systems that can learn from data. Instead of being explicitly programmed with rules, ML models identify patterns and make decisions based on examples.\n\nTraditional Programming vs. ML\n\nTraditional Programming: Data + Rules \\(\\rightarrow\\) Output\nMachine Learning: Data + Output \\(\\rightarrow\\) Rules (The Model)",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/outline.html#types-of-machine-learning",
+    "href": "lectures/01-introduction-to-ml/outline.html#types-of-machine-learning",
+    "title": "Lecture 1: Introduction to ML",
+    "section": "Types of Machine Learning",
+    "text": "Types of Machine Learning\n\nSupervised Learning: Learning with labeled data (e.g., spam detection).\nUnsupervised Learning: Finding hidden patterns in unlabeled data (e.g., customer segmentation).\nReinforcement Learning: Learning through trial and error to maximize rewards (e.g., game playing AI).",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/outline.html#real-world-applications",
+    "href": "lectures/01-introduction-to-ml/outline.html#real-world-applications",
+    "title": "Lecture 1: Introduction to ML",
+    "section": "Real-World Applications",
+    "text": "Real-World Applications\n\nHealthcare: Disease diagnosis and drug discovery.\nFinance: Fraud detection and algorithmic trading.\nE-commerce: Recommendation systems (Amazon, Netflix).\nTransportation: Self-driving cars and traffic prediction.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/outline.html#course-roadmap",
+    "href": "lectures/01-introduction-to-ml/outline.html#course-roadmap",
+    "title": "Lecture 1: Introduction to ML",
+    "section": "Course Roadmap",
+    "text": "Course Roadmap\nThroughout this section, we will cover: 1. Introduction & Fundamentals 2. Supervised Learning (Regression & Classification) 3. Unsupervised Learning (Clustering & PCA) 4. Model Evaluation & Deployment\n\n\n\n\n\n\nTipPro Tip\n\n\n\nAlways start by understanding your data before choosing an ML model!",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/slides.html",
+    "href": "lectures/03-unsupervised-learning/slides.html",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "",
+    "text": "Missing Semester CUET",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/slides.html#what-is-unsupervised-learning",
+    "href": "lectures/03-unsupervised-learning/slides.html#what-is-unsupervised-learning",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "What is Unsupervised Learning?",
+    "text": "What is Unsupervised Learning?\n\nLearning from unlabeled data.\nFinding hidden structure or patterns.\nNo “right answer” to compare against.",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/slides.html#k-means-clustering",
+    "href": "lectures/03-unsupervised-learning/slides.html#k-means-clustering",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "K-Means Clustering",
+    "text": "K-Means Clustering\n\nGrouping data into \\(K\\) clusters.\nIterative algorithm:\n\nInitialize centroids.\nAssign points to nearest centroid.\nUpdate centroids.\n\n\n\n\n\nCode\nprint(\"Running K-Means simulation...\")\nprint(\"Clusters converged after 5 iterations.\")\n\n\nRunning K-Means simulation...\nClusters converged after 5 iterations.",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/slides.html#pca-dimensionality-reduction",
+    "href": "lectures/03-unsupervised-learning/slides.html#pca-dimensionality-reduction",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "PCA (Dimensionality Reduction)",
+    "text": "PCA (Dimensionality Reduction)\n\nReducing features while keeping variance.\nVisualizing high-dimensional data in 2D or 3D.",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/slides.html#anomaly-detection",
+    "href": "lectures/03-unsupervised-learning/slides.html#anomaly-detection",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "Anomaly Detection",
+    "text": "Anomaly Detection\n\nFinding outliers in data.\nApplications: Fraud, system failure, security.",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/slides.html#questions",
+    "href": "lectures/03-unsupervised-learning/slides.html#questions",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "Questions?",
+    "text": "Questions?\nThank you for participating in the ML Section!",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/outline.html",
+    "href": "lectures/03-unsupervised-learning/outline.html",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "",
+    "text": "By the end of this lecture, you will be able to: - Define Unsupervised Learning and its primary goals. - Understand and implement K-Means Clustering. - Explain the concept of Dimensionality Reduction using PCA. - Identify use cases for Anomaly Detection. - Differentiate between various clustering techniques.",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/outline.html#learning-objectives",
+    "href": "lectures/03-unsupervised-learning/outline.html#learning-objectives",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "",
+    "text": "By the end of this lecture, you will be able to: - Define Unsupervised Learning and its primary goals. - Understand and implement K-Means Clustering. - Explain the concept of Dimensionality Reduction using PCA. - Identify use cases for Anomaly Detection. - Differentiate between various clustering techniques.",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/outline.html#what-is-unsupervised-learning",
+    "href": "lectures/03-unsupervised-learning/outline.html#what-is-unsupervised-learning",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "What is Unsupervised Learning?",
+    "text": "What is Unsupervised Learning?\nUnsupervised Learning involves training a model on data that has no labels. The model must find the underlying structure or distribution in the data on its own.\n\nKey Tasks\n\nClustering: Grouping similar data points together (e.g., K-Means, Hierarchical Clustering).\nDimensionality Reduction: Reducing the number of random variables under consideration (e.g., PCA, t-SNE).\nAssociation: Discovering rules that describe your data (e.g., people who buy X also buy Y).",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/outline.html#clustering-techniques",
+    "href": "lectures/03-unsupervised-learning/outline.html#clustering-techniques",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "Clustering Techniques",
+    "text": "Clustering Techniques\n\n1. K-Means Clustering\nPartitions the data into \\(K\\) clusters. Each data point belongs to the cluster with the nearest mean (centroid).\n\n\n2. Hierarchical Clustering\nBuilds a hierarchy of clusters either through a top-down or bottom-up approach.",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/outline.html#principal-component-analysis-pca",
+    "href": "lectures/03-unsupervised-learning/outline.html#principal-component-analysis-pca",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "Principal Component Analysis (PCA)",
+    "text": "Principal Component Analysis (PCA)\nPCA is a dimensionality reduction technique that transforms high-dimensional data into a lower-dimensional form while retaining as much variance as possible. It’s often used for: - Data visualization - Noise reduction - Speeding up other ML algorithms",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/outline.html#anomaly-detection",
+    "href": "lectures/03-unsupervised-learning/outline.html#anomaly-detection",
+    "title": "Lecture 3: Unsupervised Learning",
+    "section": "Anomaly Detection",
+    "text": "Anomaly Detection\nIdentifying rare items, events, or observations which raise suspicions by differing significantly from the majority of the data. Useful in: - Credit card fraud detection - Network security - Industrial equipment monitoring\n\n\n\n\n\n\nNoteReflection\n\n\n\nThink about how you could use Unsupervised Learning on a dataset of customer purchase history!",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/video.html",
+    "href": "lectures/03-unsupervised-learning/video.html",
+    "title": "Lecture 3: Video",
+    "section": "",
+    "text": "Learn how to find patterns in unlabeled data using clustering and dimensionality reduction.\n\n\n\n\nDuration: 50 minutes\nTopics Covered: K-Means Clustering, PCA, Anomaly Detection.\nResources: Slides, Outline\n\n\n\n\n\n\n\n\nTipFinal Project\n\n\n\nStart thinking about how you can apply these techniques to your final course project!",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Video"
+    ]
+  },
+  {
+    "objectID": "lectures/03-unsupervised-learning/video.html#watch-the-lecture",
+    "href": "lectures/03-unsupervised-learning/video.html#watch-the-lecture",
+    "title": "Lecture 3: Video",
+    "section": "",
+    "text": "Learn how to find patterns in unlabeled data using clustering and dimensionality reduction.\n\n\n\n\nDuration: 50 minutes\nTopics Covered: K-Means Clustering, PCA, Anomaly Detection.\nResources: Slides, Outline\n\n\n\n\n\n\n\n\nTipFinal Project\n\n\n\nStart thinking about how you can apply these techniques to your final course project!",
+    "crumbs": [
+      "Home",
+      "3. Unsupervised Learning",
+      "Lecture Video"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/slides.html",
+    "href": "lectures/01-introduction-to-ml/slides.html",
+    "title": "Lecture 1: Introduction to Machine Learning",
+    "section": "",
+    "text": "Missing Semester CUET",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/slides.html#what-is-machine-learning",
+    "href": "lectures/01-introduction-to-ml/slides.html#what-is-machine-learning",
+    "title": "Lecture 1: Introduction to Machine Learning",
+    "section": "What is Machine Learning?",
+    "text": "What is Machine Learning?\n\nA subset of AI that allows systems to learn from data.\nArthur Samuel (1959): “Field of study that gives computers the ability to learn without being explicitly programmed.”\nFocus on statistical patterns and predictive modeling.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/slides.html#types-of-ml",
+    "href": "lectures/01-introduction-to-ml/slides.html#types-of-ml",
+    "title": "Lecture 1: Introduction to Machine Learning",
+    "section": "Types of ML",
+    "text": "Types of ML\n\nSupervised Learning: Mapping inputs to outputs using labeled data.\nUnsupervised Learning: Discovering structure in unlabeled data.\nReinforcement Learning: Learning via rewards and penalties.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/slides.html#applications-in-real-world",
+    "href": "lectures/01-introduction-to-ml/slides.html#applications-in-real-world",
+    "title": "Lecture 1: Introduction to Machine Learning",
+    "section": "Applications in Real World",
+    "text": "Applications in Real World\n\nImage Recognition: FaceID, medical imaging.\nNLP: Translation, sentiment analysis, chatbots.\nRecommender Systems: Netflix, YouTube, Spotify.\nAutonomous Vehicles: Self-driving cars.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/slides.html#why-python-for-ml",
+    "href": "lectures/01-introduction-to-ml/slides.html#why-python-for-ml",
+    "title": "Lecture 1: Introduction to Machine Learning",
+    "section": "Why Python for ML?",
+    "text": "Why Python for ML?\nPython has a rich ecosystem of libraries: - NumPy: Numerical computing. - Pandas: Data manipulation. - Scikit-Learn: General ML tools. - PyTorch / TensorFlow: Deep Learning.\n\n\n\nCode\nprint(\"Hello, ML World!\")\nprint(\"Python version is ready for ML.\")\n\n\nHello, ML World!\nPython version is ready for ML.",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/01-introduction-to-ml/slides.html#questions",
+    "href": "lectures/01-introduction-to-ml/slides.html#questions",
+    "title": "Lecture 1: Introduction to Machine Learning",
+    "section": "Questions?",
+    "text": "Questions?\nFeel free to ask about: - Course structure - Prerequisites - Career paths in ML",
+    "crumbs": [
+      "Home",
+      "1. Introduction to ML",
+      "Lecture Slides"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/outline.html",
+    "href": "lectures/02-supervised-learning/outline.html",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "",
+    "text": "By the end of this lecture, you will be able to: - Explain the concept of Supervised Learning. - Distinguish between Regression and Classification tasks. - Understand the basics of Linear and Logistic Regression. - Build and evaluate a simple Decision Tree model. - Use key evaluation metrics like Accuracy, Precision, and Recall.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/outline.html#learning-objectives",
+    "href": "lectures/02-supervised-learning/outline.html#learning-objectives",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "",
+    "text": "By the end of this lecture, you will be able to: - Explain the concept of Supervised Learning. - Distinguish between Regression and Classification tasks. - Understand the basics of Linear and Logistic Regression. - Build and evaluate a simple Decision Tree model. - Use key evaluation metrics like Accuracy, Precision, and Recall.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/outline.html#what-is-supervised-learning",
+    "href": "lectures/02-supervised-learning/outline.html#what-is-supervised-learning",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "What is Supervised Learning?",
+    "text": "What is Supervised Learning?\nSupervised Learning is the most common type of ML where the model is trained on a labeled dataset. A labeled dataset means that for every input, the correct output (or “label”) is already known.\n\nRegression vs. Classification\n\nRegression: Predicting a continuous numerical value (e.g., house prices, stock trends).\nClassification: Predicting a discrete category or class (e.g., spam vs. not spam, cat vs. dog).",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/outline.html#key-algorithms",
+    "href": "lectures/02-supervised-learning/outline.html#key-algorithms",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "Key Algorithms",
+    "text": "Key Algorithms\n\n1. Linear Regression\nUsed for regression tasks. It finds the best-fit line that minimizes the difference between predicted and actual values.\n\n\n2. Logistic Regression\nDespite its name, it’s used for binary classification. It outputs the probability of an input belonging to a certain class.\n\n\n3. Decision Trees\nA tree-like model that makes decisions based on feature values. It’s intuitive and can handle both regression and classification.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/outline.html#evaluation-metrics",
+    "href": "lectures/02-supervised-learning/outline.html#evaluation-metrics",
+    "title": "Lecture 2: Supervised Learning",
+    "section": "Evaluation Metrics",
+    "text": "Evaluation Metrics\nTo know how well our model is performing, we use: - Mean Squared Error (MSE): For regression. - Accuracy: Percentage of correct predictions. - Precision & Recall: Critical for imbalanced datasets. - F1-Score: The harmonic mean of precision and recall.\n\n\n\n\n\n\nWarningOverfitting\n\n\n\nBe careful of overfitting! A model that performs perfectly on training data but poorly on new data is not useful in production.",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Outline"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/video.html",
+    "href": "lectures/02-supervised-learning/video.html",
+    "title": "Lecture 2: Video",
+    "section": "",
+    "text": "This lecture dives into Supervised Learning, covering the math and intuition behind linear regression, logistic regression, and decision trees.\n\n\n\n\nDuration: 55 minutes\nTopics Covered: Supervised Learning theory, Linear Regression, Logistic Regression, Evaluation Metrics.\nResources: Slides, Outline\n\n\n\n\n\n\n\n\nNoteLab Session\n\n\n\nDon’t forget to complete the lab exercises after watching the video!",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Video"
+    ]
+  },
+  {
+    "objectID": "lectures/02-supervised-learning/video.html#watch-the-lecture",
+    "href": "lectures/02-supervised-learning/video.html#watch-the-lecture",
+    "title": "Lecture 2: Video",
+    "section": "",
+    "text": "This lecture dives into Supervised Learning, covering the math and intuition behind linear regression, logistic regression, and decision trees.\n\n\n\n\nDuration: 55 minutes\nTopics Covered: Supervised Learning theory, Linear Regression, Logistic Regression, Evaluation Metrics.\nResources: Slides, Outline\n\n\n\n\n\n\n\n\nNoteLab Session\n\n\n\nDon’t forget to complete the lab exercises after watching the video!",
+    "crumbs": [
+      "Home",
+      "2. Supervised Learning",
+      "Lecture Video"
+    ]
+  }
+]
