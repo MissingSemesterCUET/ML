@@ -48,9 +48,9 @@ Everything you need — outlines, interactive slides, and recorded sessions.
 ::: {.lecture-card}
 [Lecture 01]{.lecture-number}
 
-### Introduction to Python
+### Python & Intro to ML/DL
 
-Learn the fundamentals: variables, data types, control structures, functions, and basic data structures in Python.
+Python for C programmers & overview of ML
 
 ::: {.lecture-links}
 [Outline](lectures/01/outline.html)
@@ -59,6 +59,47 @@ Learn the fundamentals: variables, data types, control structures, functions, an
 :::
 :::
 
+::: {.lecture-card}
+[Lecture 02]{.lecture-number}
+
+### Maths for ML & Numpy
+
+Vectors, Matrices, Numpy, and Pandas
+
+::: {.lecture-links}
+[Outline](lectures/02/outline.html)
+<!-- [Notebook](lectures/01/notebook.html) -->
+<!-- [Video](lectures/01/video.html) -->
+:::
+:::
+
+::: {.lecture-card}
+[Lecture 03]{.lecture-number}
+
+### Visualization I
+
+Matplotlib and Seaborn
+
+::: {.lecture-links}
+[Outline](lectures/03/outline.html)
+<!-- [Notebook](lectures/01/notebook.html) -->
+<!-- [Video](lectures/01/video.html) -->
+:::
+:::
+
+::: {.lecture-card}
+[Lecture 04]{.lecture-number}
+
+### Visualization II
+
+Plotly and interactive visualizations
+
+::: {.lecture-links}
+[Outline](lectures/04/outline.html)
+<!-- [Notebook](lectures/01/notebook.html) -->
+<!-- [Video](lectures/01/video.html) -->
+:::
+:::
 
 <!-- 
 The lecture card format:
