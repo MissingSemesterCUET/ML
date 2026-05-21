@@ -52,6 +52,8 @@ Everything you need — outlines, interactive slides, and recorded sessions.
 
 Python for C programmers & overview of ML
 
+By Sidratul Muntaha
+
 ::: {.lecture-links}
 [Outline](lectures/01/outline.html)
 [Notebook](lectures/01/notebook.html)
@@ -65,6 +67,8 @@ Python for C programmers & overview of ML
 ### Maths for ML & Numpy
 
 Vectors, Matrices, Numpy, and Pandas
+
+By Zarif Muhtasim Showgat 
 
 ::: {.lecture-links}
 [Outline](lectures/02/outline.html)
@@ -80,6 +84,8 @@ Vectors, Matrices, Numpy, and Pandas
 
 Matplotlib and Seaborn
 
+By Oarisa Rebayet
+
 ::: {.lecture-links}
 [Outline](lectures/03/outline.html)
 <!-- [Notebook](lectures/01/notebook.html) -->
@@ -93,6 +99,8 @@ Matplotlib and Seaborn
 ### Visualization II
 
 Plotly and interactive visualizations
+
+By Mahir Salahin
 
 ::: {.lecture-links}
 [Outline](lectures/04/outline.html)
