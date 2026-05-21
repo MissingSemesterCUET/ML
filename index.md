@@ -48,45 +48,34 @@ Everything you need — outlines, interactive slides, and recorded sessions.
 ::: {.lecture-card}
 [Lecture 01]{.lecture-number}
 
-### Linear Regression
+### Introduction to Python
 
-Learn the foundations: cost functions, gradient descent, and fitting your first model to real data.
+Learn the fundamentals: variables, data types, control structures, functions, and basic data structures in Python.
 
 ::: {.lecture-links}
-[Outline](lectures/01-linear-regression/outline.md)
-[Slides](lectures/01-linear-regression/slides.ipynb)
-[Video](lectures/01-linear-regression/video.md)
+[Outline](lectures/01/outline.html)
+[Notebook](lectures/01/notebook.html)
+[Video](lectures/01/video.html)
 :::
 :::
 
+
+<!-- 
+The lecture card format:
 ::: {.lecture-card}
-[Lecture 02]{.lecture-number}
+[Lecture 0x]{.lecture-number}
 
-### Logistic Regression & Classification
+### [Title here]
 
-Move from regression to classification — sigmoid functions, decision boundaries, and evaluation metrics.
-
-::: {.lecture-links}
-[Outline](lectures/02-logistic-regression/outline.md)
-[Slides](lectures/02-logistic-regression/slides.ipynb)
-[Video](lectures/02-logistic-regression/video.md)
-:::
-:::
-
-::: {.lecture-card}
-[Lecture 03]{.lecture-number}
-
-### Neural Networks
-
-Build a neural network from scratch — forward pass, backpropagation, and training on MNIST.
+[Description here]
 
 ::: {.lecture-links}
-[Outline](lectures/03-neural-networks/outline.md)
-[Slides](lectures/03-neural-networks/slides.ipynb)
-[Video](lectures/03-neural-networks/video.md)
+[Outline](lectures/0x/outline.md)
+[Notebook](lectures/0x/slides.ipynb)
+[Video](lectures/0x/video.md)
 :::
 :::
-
+-->
 :::
 
 :::

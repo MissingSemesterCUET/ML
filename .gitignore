@@ -8,3 +8,6 @@ __pycache__/
 dist/
 build/
 .env
+.venv
+
+**/*.quarto_ipynb
