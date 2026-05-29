@@ -25,11 +25,11 @@ website:
         - section: "Lecture 1"
           contents:
             - text: "Outline"
-              href: lectures/01-linear-regression/outline.md
+              href: lectures/01/outline.md
             - text: "Slides"
-              href: lectures/01-linear-regression/slides.ipynb
+              href: lectures/01/notebook.ipynb
             - text: "Video"
-              href: lectures/01-linear-regression/video.md
+              href: lectures/01/video.md
     - title: "Lecture 2 – Logistic Regression"
       style: docked
       collapse-level: 1
