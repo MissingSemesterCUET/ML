@@ -5,15 +5,37 @@ page-layout: full
 ---
 
 ::: {.hero}
+::: {.hero-container}
 
+::: {.hero-content}
 [Missing Semester CUET]{.hero-badge}
 
 # Machine Learning
 
-From the very basics
+Master ML from the ground up. Interactive lectures, hands-on notebooks, and visual explanations.
 
+::: {.cta-group}
+[Start Learning](#lectures){.btn-primary}
 [View on GitHub](https://github.com/MissingSemesterCUET/ML){.btn-outline}
+:::
+:::
 
+::: {.hero-visual}
+```python
+import torch
+import torch.nn as nn
+
+class MissingSemester(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.learn = nn.Linear(Basics, Mastery)
+        
+    def forward(self, you):
+        return self.learn(you)
+```
+:::
+
+:::
 :::
 
 ::: {.content-container}

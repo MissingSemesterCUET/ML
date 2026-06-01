@@ -377,10 +377,8 @@ tbody tr:hover {
 }
 
 .hero {
-  text-align: center;
   padding: 5rem 1.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   
@@ -402,7 +400,83 @@ tbody tr:hover {
   
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid var(--border);
+  /* border-bottom removed for seamless transition */
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-visual {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.hero-visual pre, .hero-visual div.sourceCode {
+  margin: 0 !important;
+  width: 100%;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background-color: #0d0d12 !important;
+}
+
+.hero-visual div.sourceCode {
+  position: relative;
+  padding-top: 2rem !important; /* Make room for fake title bar */
+  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-visual div.sourceCode:hover {
+  transform: perspective(1000px) rotateY(-2deg) rotateX(2deg) scale(1.02);
+}
+
+.hero-visual div.sourceCode::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+  z-index: 2;
+}
+
+.hero-visual pre {
+  padding-top: 0 !important; /* Prevent double padding if pre is inside sourceCode */
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .hero::after {
@@ -421,11 +495,14 @@ tbody tr:hover {
   content: "";
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background: radial-gradient(circle at center, transparent 0%, #09090b 100%);
+  background: 
+    radial-gradient(circle at center, transparent 0%, #09090b 100%),
+    linear-gradient(to bottom, transparent 60%, #09090b 100%);
   pointer-events: none;
+  z-index: 0;
 }
 
-.hero-badge, .hero h1, .hero p, .hero .btn-outline {
+.hero-badge, .hero h1, .hero p, .hero .cta-group {
   position: relative;
   z-index: 1;
   animation: fadeInUp 0.8s ease-out forwards;
@@ -435,7 +512,7 @@ tbody tr:hover {
 .hero-badge { animation-delay: 0.1s; }
 .hero h1 { animation-delay: 0.3s; }
 .hero p { animation-delay: 0.5s; }
-.hero .btn-outline { animation-delay: 0.7s; }
+.hero .cta-group { animation-delay: 0.7s; }
 
 .hero-badge {
   display: inline-flex;
@@ -573,13 +650,15 @@ tbody tr:hover {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
-  transition: border-color var(--transition-fast);
+  transition: all var(--transition-fast);
   display: flex;
   flex-direction: column;
 }
 
 .lecture-card:hover {
   border-color: var(--ring);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
 }
 
 .lecture-number {
@@ -635,6 +714,13 @@ tbody tr:hover {
   border-radius: var(--radius);
   padding: 1.5rem;
   background-color: var(--card);
+  transition: all var(--transition-fast);
+}
+
+.prereq-item:hover {
+  border-color: var(--ring);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
 }
 
 .prereq-icon {
