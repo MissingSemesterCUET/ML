@@ -68,6 +68,7 @@ format:
   html:
     theme: none
     css: styles.css
+    include-before-body: navbar.html
     html-math-method: mathjax
     highlight-style: atom-one-dark
     toc: true

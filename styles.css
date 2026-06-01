@@ -183,10 +183,28 @@ main.content {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 0.75rem 1.5rem;
   position: sticky;
   top: 0;
   z-index: 50;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .navbar-brand {
@@ -194,6 +212,11 @@ main.content {
   font-size: 0.95rem;
   color: var(--foreground) !important;
   letter-spacing: -0.025em;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link {
