@@ -108,8 +108,8 @@ By Oarisa Rebayet
 
 ::: {.lecture-links}
 [Outline](lectures/03/outline.html)
-<!-- [Notebook](lectures/01/notebook.html) -->
-<!-- [Video](lectures/01/video.html) -->
+[Notebook](lectures/03/notebook.html)
+<!-- [Video](lectures/03/video.html) -->
 :::
 :::
 
