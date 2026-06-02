@@ -8,8 +8,6 @@ page-layout: full
 ::: {.hero-container}
 
 ::: {.hero-content}
-[Missing Semester CUET]{.hero-badge}
-
 # Machine Learning
 
 Master ML from the ground up. Interactive lectures, hands-on notebooks, and visual explanations.
