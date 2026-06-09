@@ -11,3 +11,4 @@ build/
 .venv
 
 **/*.quarto_ipynb
+.antigravitycli
