@@ -26,6 +26,35 @@
   --input: #27272a;
   --ring: #d4d4d8;
   
+  /* RGB Components (for opacity functions) */
+  --background-rgb: 9, 9, 11;
+  --black-rgb: 0, 0, 0;
+  --white-rgb: 255, 255, 255;
+  --blue-500-rgb: 59, 130, 246;
+  --blue-900-rgb: 30, 58, 138;
+
+  /* Additional Palette Colors */
+  --code-bg: #18181b;
+  --hero-editor-bg: #0d0d12;
+  --hero-btn-hover-text: #ffffff;
+  --plot-bg: #ffffff;
+  
+  /* Blue Accents */
+  --blue-200: #bfdbfe;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+
+  /* Hero Gradient Colors */
+  --hero-gradient-1: #020617;
+  --hero-gradient-2: #1e3a8a;
+  --hero-gradient-3: #0f172a;
+  --hero-gradient-4: #082f49;
+
+  /* Window Controls */
+  --window-close: #ff5f56;
+  --window-minimize: #ffbd2e;
+  --window-maximize: #27c93f;
+
   --radius: 0.5rem;
   
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -33,6 +62,57 @@
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #18181b;
+  --primary-foreground: #fafafa;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #18181b;
+
+  /* RGB Components (for opacity functions) */
+  --background-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+  --white-rgb: 255, 255, 255;
+  --blue-500-rgb: 37, 99, 235;
+  --blue-900-rgb: 219, 234, 254;
+
+  /* Additional Palette Colors */
+  --code-bg: #f4f4f5;
+  --hero-editor-bg: #ffffff;
+  --hero-btn-hover-text: #1e40af;
+  --plot-bg: #ffffff;
+  
+  /* Blue Accents */
+  --blue-200: #1e40af;
+  --blue-300: #1d4ed8;
+  --blue-400: #2563eb;
+
+  /* Hero Gradient Colors (Light, Soft Blue/Slate Theme) */
+  --hero-gradient-1: #f8fafc;
+  --hero-gradient-2: #dbeafe;
+  --hero-gradient-3: #eff6ff;
+  --hero-gradient-4: #e0f2fe;
+
+  /* Window Controls */
+  --window-close: #ff5f56;
+  --window-minimize: #ffbd2e;
+  --window-maximize: #27c93f;
 }
 
 *, *::before, *::after {
@@ -134,7 +214,7 @@ code {
 }
 
 div.sourceCode {
-  background-color: #18181b !important;
+  background-color: var(--code-bg) !important;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   margin: 1.5rem 0;
@@ -149,7 +229,7 @@ div.sourceCode pre {
 }
 
 pre {
-  background-color: #18181b !important;
+  background-color: var(--code-bg) !important;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem;
@@ -179,7 +259,7 @@ main.content {
 
 /* ── Navbar ─────────────────────────────────────────────────── */
 .navbar, nav.navbar {
-  background-color: rgba(9, 9, 11, 0.8) !important;
+  background-color: rgba(var(--background-rgb), 0.8) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -206,6 +286,44 @@ main.content {
   gap: 0.5rem;
   align-items: center;
   margin-right: -0.75rem; /* Offset the right padding of the last nav-link so text aligns perfectly */
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--muted-foreground);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: calc(var(--radius) - 2px);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--foreground);
+  background-color: var(--accent);
+}
+
+/* Hide sun/moon depending on theme */
+html:not([data-theme="light"]) .sun-icon {
+  display: block;
+}
+html:not([data-theme="light"]) .moon-icon {
+  display: none;
+}
+html[data-theme="light"] .sun-icon {
+  display: none;
+}
+html[data-theme="light"] .moon-icon {
+  display: block;
 }
 
 .mobile-menu-btn {
@@ -384,7 +502,7 @@ tbody tr:hover {
 }
 
 .cell-output-display img, .cell-output-display svg {
-  background-color: var(--foreground); /* White background for matplotlib plots to be visible */
+  background-color: var(--plot-bg); /* White background for matplotlib plots to be visible */
   border-radius: var(--radius);
   border: 1px solid var(--border);
   padding: 0.5rem;
@@ -427,7 +545,7 @@ tbody tr:hover {
   margin-bottom: 4rem;
   
   /* Fancy Animated Gradient Background */
-  background: linear-gradient(-45deg, #020617, #1e3a8a, #0f172a, #082f49);
+  background: linear-gradient(-45deg, var(--hero-gradient-1), var(--hero-gradient-2), var(--hero-gradient-3), var(--hero-gradient-4));
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   
@@ -469,9 +587,9 @@ tbody tr:hover {
 .hero-visual pre, .hero-visual div.sourceCode {
   margin: 0 !important;
   width: 100%;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 60px rgba(var(--black-rgb), 0.5), 0 0 0 1px rgba(var(--white-rgb), 0.1);
   border-radius: 12px;
-  background-color: #0d0d12 !important;
+  background-color: var(--hero-editor-bg) !important;
   text-align: left !important;
 }
 
@@ -494,8 +612,8 @@ tbody tr:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #ff5f56;
-  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+  background: var(--window-close);
+  box-shadow: 20px 0 0 var(--window-minimize), 40px 0 0 var(--window-maximize);
   z-index: 2;
 }
 
@@ -520,8 +638,8 @@ tbody tr:hover {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(var(--blue-500-rgb), 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--blue-500-rgb), 0.1) 1px, transparent 1px);
   background-size: 30px 30px;
   z-index: 0;
   pointer-events: none;
@@ -532,8 +650,8 @@ tbody tr:hover {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   background: 
-    radial-gradient(circle at center, transparent 0%, #09090b 100%),
-    linear-gradient(to bottom, transparent 60%, #09090b 100%);
+    radial-gradient(circle at center, transparent 0%, var(--background) 100%),
+    linear-gradient(to bottom, transparent 60%, var(--background) 100%);
   pointer-events: none;
   z-index: 0;
 }
@@ -554,22 +672,22 @@ tbody tr:hover {
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid rgba(59, 130, 246, 0.4);
-  background-color: rgba(30, 58, 138, 0.2);
+  border: 1px solid rgba(var(--blue-500-rgb), 0.4);
+  background-color: rgba(var(--blue-900-rgb), 0.2);
   padding: 0.25rem 0.75rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 500;
-  color: #60a5fa;
+  color: var(--blue-400);
   margin-bottom: 1.5rem;
   transition: all var(--transition-fast);
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 10px rgba(var(--blue-500-rgb), 0.1);
 }
 
 .hero-badge:hover {
-  background-color: rgba(30, 58, 138, 0.4);
-  color: #93c5fd;
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+  background-color: rgba(var(--blue-900-rgb), 0.4);
+  color: var(--blue-300);
+  box-shadow: 0 0 15px rgba(var(--blue-500-rgb), 0.3);
   text-decoration: none;
 }
 
@@ -581,21 +699,21 @@ tbody tr:hover {
   margin-bottom: 1.5rem;
   border: none;
   line-height: 1.1;
-  text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  text-shadow: 0 0 20px rgba(var(--blue-500-rgb), 0.3);
 }
 
 .hero .btn-outline {
   font-family: var(--font-mono);
-  border-color: rgba(59, 130, 246, 0.5);
-  color: #bfdbfe !important;
-  background-color: rgba(30, 58, 138, 0.1);
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
+  border-color: rgba(var(--blue-500-rgb), 0.5);
+  color: var(--blue-200) !important;
+  background-color: rgba(var(--blue-900-rgb), 0.1);
+  box-shadow: 0 0 10px rgba(var(--blue-500-rgb), 0.1);
 }
 
 .hero .btn-outline:hover {
-  background-color: rgba(30, 58, 138, 0.4);
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
-  color: #ffffff !important;
+  background-color: rgba(var(--blue-900-rgb), 0.4);
+  box-shadow: 0 0 15px rgba(var(--blue-500-rgb), 0.3);
+  color: var(--hero-btn-hover-text) !important;
 }
 
 .hero .subtitle {
@@ -694,7 +812,7 @@ tbody tr:hover {
 .lecture-card:hover {
   border-color: var(--ring);
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px -5px rgba(var(--black-rgb), 0.5);
 }
 
 .lecture-number {
@@ -756,7 +874,7 @@ tbody tr:hover {
 .prereq-item:hover {
   border-color: var(--ring);
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px -5px rgba(var(--black-rgb), 0.5);
 }
 
 .prereq-icon {
@@ -862,7 +980,7 @@ tbody tr:hover {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(9, 9, 11, 0.95);
+    background-color: rgba(var(--background-rgb), 0.95);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 1rem;
@@ -909,3 +1027,41 @@ tbody tr:hover {
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); }
 ::selection { background: var(--foreground); color: var(--background); }
+
+/* Light mode code block syntax highlighting overrides (GitHub Light style) */
+html[data-theme="light"] pre,
+html[data-theme="light"] pre code,
+html[data-theme="light"] code span,
+html[data-theme="light"] div.sourceCode {
+  color: #24292e !important;
+}
+
+html[data-theme="light"] code span.al { color: #d73a49 !important; font-weight: bold; } /* Alert */
+html[data-theme="light"] code span.an { color: #6f42c1 !important; } /* Annotation */
+html[data-theme="light"] code span.at { color: #e36209 !important; } /* Attribute */
+html[data-theme="light"] code span.bn { color: #005cc5 !important; } /* BaseN */
+html[data-theme="light"] code span.bu { color: #005cc5 !important; } /* BuiltIn */
+html[data-theme="light"] code span.cf { color: #d73a49 !important; font-weight: bold; } /* ControlFlow */
+html[data-theme="light"] code span.ch { color: #22863a !important; } /* Char */
+html[data-theme="light"] code span.cn { color: #005cc5 !important; } /* Constant */
+html[data-theme="light"] code span.co { color: #6a737d !important; font-style: italic; } /* Comment */
+html[data-theme="light"] code span.cv { color: #6a737d !important; font-style: italic; } /* CommentVar */
+html[data-theme="light"] code span.do { color: #6a737d !important; font-style: italic; } /* Documentation */
+html[data-theme="light"] code span.dt { color: #6f42c1 !important; } /* DataType */
+html[data-theme="light"] code span.dv { color: #005cc5 !important; } /* DecVal */
+html[data-theme="light"] code span.er { color: #d73a49 !important; font-weight: bold; } /* Error */
+html[data-theme="light"] code span.ex { color: #005cc5 !important; } /* Extension */
+html[data-theme="light"] code span.fl { color: #005cc5 !important; } /* Float */
+html[data-theme="light"] code span.fu { color: #6f42c1 !important; } /* Function */
+html[data-theme="light"] code span.im { color: #22863a !important; } /* Import */
+html[data-theme="light"] code span.in { color: #6a737d !important; } /* Information */
+html[data-theme="light"] code span.kw { color: #d73a49 !important; font-weight: bold; } /* Keyword */
+html[data-theme="light"] code span.op { color: #24292e !important; } /* Operator */
+html[data-theme="light"] code span.ot { color: #005cc5 !important; } /* Other */
+html[data-theme="light"] code span.pp { color: #d73a49 !important; } /* Preprocessor */
+html[data-theme="light"] code span.sc { color: #22863a !important; } /* SpecialChar */
+html[data-theme="light"] code span.ss { color: #22863a !important; } /* SpecialString */
+html[data-theme="light"] code span.st { color: #22863a !important; } /* String */
+html[data-theme="light"] code span.va { color: #e36209 !important; } /* Variable */
+html[data-theme="light"] code span.vs { color: #22863a !important; } /* VerbatimString */
+html[data-theme="light"] code span.wa { color: #d73a49 !important; font-style: italic; } /* Warning */
