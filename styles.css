@@ -36,7 +36,8 @@
   /* Additional Palette Colors */
   --code-bg: #18181b;
   --hero-editor-bg: #0d0d12;
-  --white: #ffffff;
+  --hero-btn-hover-text: #ffffff;
+  --plot-bg: #ffffff;
   
   /* Blue Accents */
   --blue-200: #bfdbfe;
@@ -61,6 +62,57 @@
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #18181b;
+  --primary-foreground: #fafafa;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #18181b;
+
+  /* RGB Components (for opacity functions) */
+  --background-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+  --white-rgb: 255, 255, 255;
+  --blue-500-rgb: 37, 99, 235;
+  --blue-900-rgb: 219, 234, 254;
+
+  /* Additional Palette Colors */
+  --code-bg: #f4f4f5;
+  --hero-editor-bg: #ffffff;
+  --hero-btn-hover-text: #1e40af;
+  --plot-bg: #ffffff;
+  
+  /* Blue Accents */
+  --blue-200: #1e40af;
+  --blue-300: #1d4ed8;
+  --blue-400: #2563eb;
+
+  /* Hero Gradient Colors (Light, Soft Blue/Slate Theme) */
+  --hero-gradient-1: #f8fafc;
+  --hero-gradient-2: #dbeafe;
+  --hero-gradient-3: #eff6ff;
+  --hero-gradient-4: #e0f2fe;
+
+  /* Window Controls */
+  --window-close: #ff5f56;
+  --window-minimize: #ffbd2e;
+  --window-maximize: #27c93f;
 }
 
 *, *::before, *::after {
@@ -234,6 +286,44 @@ main.content {
   gap: 0.5rem;
   align-items: center;
   margin-right: -0.75rem; /* Offset the right padding of the last nav-link so text aligns perfectly */
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--muted-foreground);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: calc(var(--radius) - 2px);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--foreground);
+  background-color: var(--accent);
+}
+
+/* Hide sun/moon depending on theme */
+html:not([data-theme="light"]) .sun-icon {
+  display: block;
+}
+html:not([data-theme="light"]) .moon-icon {
+  display: none;
+}
+html[data-theme="light"] .sun-icon {
+  display: none;
+}
+html[data-theme="light"] .moon-icon {
+  display: block;
 }
 
 .mobile-menu-btn {
@@ -412,7 +502,7 @@ tbody tr:hover {
 }
 
 .cell-output-display img, .cell-output-display svg {
-  background-color: var(--foreground); /* White background for matplotlib plots to be visible */
+  background-color: var(--plot-bg); /* White background for matplotlib plots to be visible */
   border-radius: var(--radius);
   border: 1px solid var(--border);
   padding: 0.5rem;
@@ -623,7 +713,7 @@ tbody tr:hover {
 .hero .btn-outline:hover {
   background-color: rgba(var(--blue-900-rgb), 0.4);
   box-shadow: 0 0 15px rgba(var(--blue-500-rgb), 0.3);
-  color: var(--white) !important;
+  color: var(--hero-btn-hover-text) !important;
 }
 
 .hero .subtitle {
