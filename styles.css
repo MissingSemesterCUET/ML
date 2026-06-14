@@ -285,13 +285,14 @@ main.content {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  margin-right: -0.75rem; /* Offset the right padding of the last nav-link so text aligns perfectly */
+  margin-left: auto;
 }
 
 .navbar-actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-right: -1rem;
 }
 
 .theme-toggle-btn {
