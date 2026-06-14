@@ -632,6 +632,10 @@ tbody tr:hover {
     align-items: center;
     text-align: center;
   }
+  .hero-visual {
+    max-width: 560px;
+    margin: 0 auto;
+  }
 }
 
 .hero::after {
