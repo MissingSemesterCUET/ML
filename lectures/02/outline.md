@@ -18,27 +18,58 @@ By the end of this lecture you will be able to:
 5. **Apply** filtering, grouping, and basic aggregations on real-world datasets using Pandas.
 
 ## Topics Covered
-
-| # | Topic |
-|---|-------|
-| 1 | Why maths matters for ML — building intuition |
-| 2 | Scalars, Vectors, Matrices, Tensors |
-| 3 | Vectors — Physics vs Maths perspective |
-| 4 | Indexing vectors — Vector vs Set notation |
-| 5 | Introduction to NumPy — `np.array`, `np.zeros`, `np.ones`, `np.arange` |
-| 6 | Vector operations & Hadamard product |
-| 7 | Matrices — Shape, Reshape, Transpose |
-| 8 | Dot product with transpose |
-| 9 | Matrix multiplication (code) |
-| 10 | Matrix-vector multiplication — row & column perspectives |
-| 11 | Broadcasting rules in NumPy |
-| 12 | Introduction to Pandas — Series & DataFrame |
-| 13 | Reading data — `pd.read_csv`, `pd.read_excel` |
-| 14 | Indexing & slicing — `loc`, `iloc` |
-| 15 | Filtering, sorting & grouping |
-| 16 | Handling missing data — `dropna`, `fillna` |
-| 17 | Basic statistics — `describe()`, `mean()`, `value_counts()` |
-| 18 | Quick recap & what's next |
+- Mindset
+    - It's not diffcult
+    - Jumping around
+- Vectors
+    - Vectors in physics
+    - Vectors in CS/Math
+        - Same as physics, just represented differently
+        - Why it's easier in higher dimensions
+    - Vectors vs. Sets
+        - Order
+        - Duplicates
+    - Vector Operations (exercise)
+        - Vector addition
+        - Scalar multiplication
+        - Hadamard product
+        - Dot product
+    - Numpy
+        - Vector addition
+        - Scalar multiplication
+        - Hadamard product
+        - Dot product
+- Matrices
+    - Definition: 2D array
+    - Matrix Operations (exercise)
+        - Matrix addition
+        - Scalar multiplication
+        - Hadamard product
+        - Matrix multiplication
+    - Numpy
+        - Matrix addition
+        - Scalar multiplication
+        - Hadamard product
+        - Matrix multiplication
+        - Indexing matricies
+            - Preferred way
+            - Alternative
+        - Shape
+        - Reshaping
+        - Transpose
+    - Vector are 1D Matrix
+        - Dot product as Matrix multiplication
+- Tensors
+    - Definitions: Scalars, Vectors, Matrices and, more
+    - Tensors in numpy
+        - `ndarray`
+        - Example: 3D array
+        - Broadcasting rules
+            - Example: matrix + scalar
+            - Example: matrix + column vector
+            - Example: matrix + row vector
+            - The rules
+            - Example: row vector + column vector
 
 ## Resources
 

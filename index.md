@@ -76,7 +76,7 @@ By Sidratul Muntaha
 
 ::: {.lecture-links}
 [Outline](lectures/01/outline.html)
-[Notebook](lectures/01/notebook.html)
+<!-- [Notebook](lectures/01/notebook.html) -->
 [Video](lectures/01/video.html)
 :::
 :::
@@ -92,8 +92,8 @@ By Zarif Muhtasim Showgat
 
 ::: {.lecture-links}
 [Outline](lectures/02/outline.html)
-<!-- [Notebook](lectures/01/notebook.html) -->
-<!-- [Video](lectures/01/video.html) -->
+<!-- [Notebook](lectures/02/notebook.html) -->
+<!-- [Video](lectures/02/video.html) -->
 :::
 :::
 
@@ -108,7 +108,7 @@ By Oarisa Rebayet
 
 ::: {.lecture-links}
 [Outline](lectures/03/outline.html)
-[Notebook](lectures/03/notebook.html)
+<!-- [Notebook](lectures/03/notebook.html) -->
 <!-- [Video](lectures/03/video.html) -->
 :::
 :::
