@@ -42,5 +42,5 @@ By the end of this lecture you will be able to:
 
 ## Resources
 
-- [Slides (interactive notebook)](slides.ipynb)
+<!-- - [Slides (interactive notebook)](slides.ipynb) -->
 - [Video recording](video.md)
