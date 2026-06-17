@@ -57,6 +57,7 @@ By the end of this lecture you will be able to:
         - Hadamard product
         - Matrix multiplication
             - Example: cgpa calculation (mat-vec)
+            - Not commutative
         - Frobenius norm
             - Example: recommendation system
     - Numpy
