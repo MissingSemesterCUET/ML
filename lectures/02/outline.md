@@ -21,14 +21,20 @@ By the end of this lecture you will be able to:
 - Mindset
     - It's not diffcult
     - Jumping around
+- Motivation
+    - DL is just maths+data
+    - PyTorch is like a wrapper on NumPy
 - Vectors
     - Vectors in physics
     - Vectors in CS/Math
         - Same as physics, just represented differently
         - Why it's easier in higher dimensions
+        - Column vectors and row vectors
     - Vectors vs. Sets
         - Order
         - Duplicates
+    - Example
+        - Feature vector ${(x_i, y_i)}_{i=1}^N$
     - Vector Operations (exercise)
         - Vector addition
         - Scalar multiplication
@@ -41,37 +47,64 @@ By the end of this lecture you will be able to:
         - Dot product
 - Matrices
     - Definition: 2D array
+    - Indexing (in math notation)
+        - entry
+        - column
+        - row
     - Matrix Operations (exercise)
         - Matrix addition
         - Scalar multiplication
         - Hadamard product
         - Matrix multiplication
+            - Example: cgpa calculation (mat-vec)
+        - Frobenius norm
+            - Example: recommendation system
     - Numpy
         - Matrix addition
         - Scalar multiplication
         - Hadamard product
         - Matrix multiplication
+        - Frobenius norm
         - Indexing matricies
             - Preferred way
             - Alternative
-        - Shape
+        - Matrix Shape
         - Reshaping
         - Transpose
-    - Vector are 1D Matrix
+            - Column vectors and row vectors
+    - Vector are 1D Matrix (for us)
         - Dot product as Matrix multiplication
 - Tensors
     - Definitions: Scalars, Vectors, Matrices and, more
     - Tensors in numpy
         - `ndarray`
         - Example: 3D array
+        - Transpose of 1D tensors
         - Broadcasting rules
             - Example: matrix + scalar
             - Example: matrix + column vector
             - Example: matrix + row vector
             - The rules
             - Example: row vector + column vector
+- More on Numpy
+    - types
+    - Common constructors
+        - `np.ones`
+        - `np.zeros`
+        - `np.eye`
+        - `np.arange`
+        - `np.linspace`
+- Norms
+    - L2 Norm
+        - Exercise
+        - with dot product
+        - `np.linalg.norm`
+    - L1 Norm
+        - Exercise
+    - L-max Norm
+    - Lp Norm
 
 ## Resources
 
-<!-- - [Slides (interactive notebook)](slides.ipynb) -->
+- [Slides (interactive notebook)](notebook.ipynb)
 - [Video recording](video.md)
