@@ -76,7 +76,7 @@ By Sidratul Muntaha
 
 ::: {.lecture-links}
 [Outline](lectures/01/outline.html)
-<!-- [Notebook](lectures/01/notebook.html) -->
+[Notebook](lectures/01/notebook.html)
 [Video](lectures/01/video.html)
 :::
 :::
