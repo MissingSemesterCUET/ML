@@ -1,2 +1,7 @@
-jupyter
 numpy
+pandas
+nltk
+scikit-learn
+sentence-transformers
+faiss-cpu
+matplotlib
