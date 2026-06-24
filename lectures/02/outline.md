@@ -55,10 +55,12 @@ By the end of this lecture you will be able to:
         - Matrix addition
         - Scalar multiplication
         - Hadamard product
-        - Matrix multiplication
+        - [Matrix multiplication](https://www.deep-ml.com/problems/1)
             - Example: cgpa calculation (mat-vec)
         - Frobenius norm
             - Example: recommendation system
+        - [Transpose](https://www.deep-ml.com/problems/2)
+        - [Reshaping](https://www.deep-ml.com/problems/3)
     - Numpy
         - Matrix addition
         - Scalar multiplication
@@ -103,6 +105,56 @@ By the end of this lecture you will be able to:
         - Exercise
     - L-max Norm
     - Lp Norm
+- Pandas
+    - New Series
+        - with list
+            - with index
+        - with numpy array
+        - with dict
+    - Masking
+        - Filtering
+    - New DataFrame
+        - with list
+            - with columns
+            - with index
+        - with dictionary
+    - Properties
+        - .index
+        - .columns
+        - .shape
+        - .size
+        - .ndim
+    - Methods
+        - .head()
+        - .tail()
+        - .sample()
+        - .info()
+        - .describe()
+    - Indexing
+        - Direct
+        - .loc
+        - .iloc
+    - Read
+        - csv
+        - json
+        - jsonl
+    - More Methods
+        - .sort_values()
+        - .iterrows()
+    - Masking
+        - Why use df.loc[filter] instead of df[filter]
+        - & | ~
+        - .str.contains()
+    - Creating, dropping, renaming columns
+        - inplace
+    - Aggregate functions
+        - .min()
+        - .max()
+        - .mean()
+        - .sum()
+        - .count()
+        - .agg()
+    - Group by
 
 ## Resources
 
