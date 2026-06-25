@@ -92,7 +92,7 @@ By Zarif Muhtasim Showgat
 
 ::: {.lecture-links}
 [Outline](lectures/02/outline.html)
-<!-- [Notebook](lectures/02/notebook.html) -->
+[Class Notes (by Shahnewas)](lectures/02/class1.html)
 <!-- [Video](lectures/02/video.html) -->
 :::
 :::
