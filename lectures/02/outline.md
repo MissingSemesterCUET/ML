@@ -18,6 +18,8 @@ By the end of this lecture you will be able to:
 5. **Apply** filtering, grouping, and basic aggregations on real-world datasets using Pandas.
 
 ## Topics Covered
+
+### Class 1
 - Mindset
     - It's not diffcult
     - Jumping around
@@ -45,6 +47,8 @@ By the end of this lecture you will be able to:
         - Scalar multiplication
         - Hadamard product
         - Dot product
+- Tensors
+    - Definitions: Scalars, Vectors, Matrices and, more
 - Matrices
     - Definition: 2D array
     - Indexing (in math notation)
@@ -57,15 +61,20 @@ By the end of this lecture you will be able to:
         - Hadamard product
         - [Matrix multiplication](https://www.deep-ml.com/problems/1)
             - Example: cgpa calculation (mat-vec)
-        - Frobenius norm
-            - Example: recommendation system
-        - [Transpose](https://www.deep-ml.com/problems/2)
-        - [Reshaping](https://www.deep-ml.com/problems/3)
     - Numpy
         - Matrix addition
         - Scalar multiplication
         - Hadamard product
         - Matrix multiplication
+
+### Class 2
+- Matrices (continued)
+    - Matrix Operations (exercise)
+        - Frobenius norm
+            - Example: recommendation system
+        - [Transpose](https://www.deep-ml.com/problems/2)
+        - [Reshaping](https://www.deep-ml.com/problems/3)
+    - Numpy
         - Frobenius norm
         - Indexing matricies
             - Preferred way
@@ -76,8 +85,7 @@ By the end of this lecture you will be able to:
             - Column vectors and row vectors
     - Vector are 1D Matrix (for us)
         - Dot product as Matrix multiplication
-- Tensors
-    - Definitions: Scalars, Vectors, Matrices and, more
+- Tensors (continued)
     - Tensors in numpy
         - `ndarray`
         - Example: 3D array
@@ -105,58 +113,8 @@ By the end of this lecture you will be able to:
         - Exercise
     - L-max Norm
     - Lp Norm
-- Pandas
-    - New Series
-        - with list
-            - with index
-        - with numpy array
-        - with dict
-    - Masking
-        - Filtering
-    - New DataFrame
-        - with list
-            - with columns
-            - with index
-        - with dictionary
-    - Properties
-        - .index
-        - .columns
-        - .shape
-        - .size
-        - .ndim
-    - Methods
-        - .head()
-        - .tail()
-        - .sample()
-        - .info()
-        - .describe()
-    - Indexing
-        - Direct
-        - .loc
-        - .iloc
-    - Read
-        - csv
-        - json
-        - jsonl
-    - More Methods
-        - .sort_values()
-        - .iterrows()
-    - Masking
-        - Why use df.loc[filter] instead of df[filter]
-        - & | ~
-        - .str.contains()
-    - Creating, dropping, renaming columns
-        - inplace
-    - Aggregate functions
-        - .min()
-        - .max()
-        - .mean()
-        - .sum()
-        - .count()
-        - .agg()
-    - Group by
 
 ## Resources
 
-- [Slides (interactive notebook)](notebook.ipynb)
-- [Video recording](video.md)
+- [Class Notes 1](class1.ipynb)
+- [Class Notes 2](class2.ipynb)
