@@ -839,12 +839,24 @@ tbody tr:hover {
 }
 
 .lecture-links {
-  display: flex;
-  gap: 0.5rem;
   margin-top: 1.5rem;
 }
 
+.lecture-links,
+.lecture-links p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lecture-links p {
+  margin: 0;
+  width: 100%;
+}
+
 .lecture-links a {
+  display: inline-flex;
+  align-items: center;
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--foreground);
@@ -932,6 +944,24 @@ tbody tr:hover {
 .instructor-info p {
   margin: 0;
   font-size: 0.875rem;
+}
+
+/* Video Container */
+.video-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border);
+}
+
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
 }
 
 /* Video Placeholder */
