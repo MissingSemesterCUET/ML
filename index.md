@@ -77,34 +77,51 @@ By Sidratul Muntaha
 ::: {.lecture-links}
 [Outline](lectures/01/outline.html)
 [Notebook](lectures/01/notebook.html)
-[Video](lectures/01/video.html)
 :::
 :::
 
 ::: {.lecture-card}
-[Lecture 02]{.lecture-number}
+[Lecture 02.01]{.lecture-number}
 
-### Maths for ML & Numpy
+### Introduction to Numpy
 
-Vectors, Matrices, Numpy, and Pandas
+Numpy Basics
 
 By Zarif Muhtasim Showgat 
 
 ::: {.lecture-links}
-[Outline](lectures/02/outline.html)
-[Class Notes (by Shahnewas)](lectures/02/class1.html)
-<!-- [Video](lectures/02/video.html) -->
+[Outline](lectures/02.01/outline.html)
+[Notebook 1](lectures/02.01/notebook1.html)
+[Notebook 2](lectures/02.01/notebook2.html)
+[Video](lectures/02.01/video.html)
+:::
+:::
+
+::: {.lecture-card}
+[Lecture 02.02]{.lecture-number}
+
+### Numpy from Scratch
+
+Building Numpy from scratch
+
+By Zarif Muhtasim Showgat 
+
+::: {.lecture-links}
+[Outline](lectures/02.02/outline.html)
+[Notebook 1](lectures/02.02/notebook1.html)
+<!-- [Notebook 2](lectures/02.02/notebook2.html) -->
+[Video 1](lectures/02.02/video1.html)
 :::
 :::
 
 ::: {.lecture-card}
 [Lecture 03]{.lecture-number}
 
-### Visualization I
+### Pandas
 
-Matplotlib and Seaborn
+Data Manipulation with Pandas
 
-By Oarisa Rebayet
+By Sidratul Muntaha
 
 ::: {.lecture-links}
 [Outline](lectures/03/outline.html)
@@ -116,6 +133,22 @@ By Oarisa Rebayet
 ::: {.lecture-card}
 [Lecture 04]{.lecture-number}
 
+### Visualization I
+
+Matplotlib and Seaborn
+
+By Oarisa Rebayet
+
+::: {.lecture-links}
+[Outline](lectures/04/outline.html)
+<!-- [Notebook](lectures/04/notebook.html) -->
+<!-- [Video](lectures/04/video.html) -->
+:::
+:::
+
+::: {.lecture-card}
+[Lecture 05]{.lecture-number}
+
 ### Visualization II
 
 Plotly and interactive visualizations
@@ -123,9 +156,9 @@ Plotly and interactive visualizations
 By Mahir Salahin
 
 ::: {.lecture-links}
-[Outline](lectures/04/outline.html)
-<!-- [Notebook](lectures/01/notebook.html) -->
-<!-- [Video](lectures/01/video.html) -->
+[Outline](lectures/05/outline.html)
+<!-- [Notebook](lectures/05/notebook.html) -->
+<!-- [Video](lectures/05/video.html) -->
 :::
 :::
 
