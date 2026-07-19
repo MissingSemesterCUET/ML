@@ -109,8 +109,9 @@ By Zarif Muhtasim Showgat
 ::: {.lecture-links}
 [Outline](lectures/02.02/outline.html)
 [Notebook 1](lectures/02.02/notebook1.html)
-<!-- [Notebook 2](lectures/02.02/notebook2.html) -->
 [Video 1](lectures/02.02/video1.html)
+[Notebook 2](lectures/02.02/notebook2.html)
+[Video 2](lectures/02.02/video2.html)
 :::
 :::
 
