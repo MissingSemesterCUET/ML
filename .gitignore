@@ -13,3 +13,4 @@ build/
 
 **/*.quarto_ipynb
 .antigravitycli
+personal/

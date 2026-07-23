@@ -1,17 +1,11 @@
 ---
 title: "Lecture 02.01 – Video"
-subtitle: "Introduction to Numpy"
+subtitle: "Numpy from scratch (Part I)"
 ---
 
 ## Recorded Lecture
 
 <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/VXU4LSAQDSc"
-          title="Lecture 02.01 – Introduction to Numpy"
-          allowfullscreen></iframe>
-</div>
+  <iframe src="https://drive.google.com/file/d/1D6oSEAW7ooezM6u4kbgPMDImlZnIgFpU/preview" width="640" height="480"></iframe>
 
-:::{.callout-note}
-## Apologies for technical difficulties
-Due to technical difficulties during the live session, the original recording was compromised. In its place, we have uploaded this video covering the same content.
-:::
+</div>
