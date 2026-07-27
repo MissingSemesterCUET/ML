@@ -126,8 +126,8 @@ By Sidratul Muntaha
 
 ::: {.lecture-links}
 [Outline](lectures/03/outline.html)
-<!-- [Notebook](lectures/03/notebook.html) -->
-<!-- [Video](lectures/03/video.html) -->
+[Notebook](lectures/03/notebook.html)
+[Video](lectures/03/video.html)
 :::
 :::
 
