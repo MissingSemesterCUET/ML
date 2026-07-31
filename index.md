@@ -142,8 +142,8 @@ By Oarisa Rebayet
 
 ::: {.lecture-links}
 [Outline](lectures/04/outline.html)
-<!-- [Notebook](lectures/04/notebook.html) -->
-<!-- [Video](lectures/04/video.html) -->
+[Notebook](lectures/04/notebook.html)
+[Video](lectures/04/video.html)
 :::
 :::
 
